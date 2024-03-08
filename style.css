@@ -16,6 +16,15 @@ body {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
 }
+
+body.menu-open {
+  overflow: hidden; /* Evitar el scroll en el cuerpo cuando el menú está abierto */
+}
+
+.header.menu-open {
+  overflow-y: auto; /* Permitir el scroll solo en el menú desplegado */
+}
+
 h1,
 h2,
 button,
@@ -50,7 +59,7 @@ li a {
   position: relative;
 }
 .hero-img-container img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .hero-title {
@@ -200,34 +209,35 @@ figcaption {
   }
 
   .hero-title {
-    width: 473px;
+    width: 348px;
     height: fit-content;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: left;
     border: 1px solid var(--White);
     color: var(--White);
     margin-left: 2.3rem;
     padding: -19rem;
     position: absolute;
-    top: 24rem;
-  }
-
-  .hero-img-container {
-    margin-bottom: 8rem;
+    top: 21rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .vr-section {
     position: relative;
-    margin: 3rem;
+    margin: 2rem;
+    margin-top: 6rem;
   }
 
   .interactive-img .img-mobile {
     width: 100%;
   }
   .description {
-    max-width: 475px;
     height: auto;
-    padding: 3rem;
+    padding: 0rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     text-align: center;
     position: relative;
   }
@@ -237,7 +247,7 @@ figcaption {
   }
 
   .tile-description {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 
   .gallery {
@@ -256,7 +266,7 @@ figcaption {
   }
 
   .creations-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .gallery-items img {
@@ -289,6 +299,9 @@ figcaption {
 
   .rights-reserved {
     order: 4;
+  }
+  .rights-reserved p {
+    font-size: 0.6rem;
   }
 
   .footer-btn {
